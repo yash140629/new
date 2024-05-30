@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat',sans-seriif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.home{
+background: linear-gradient(to top, rgba(0,0,0,.5)50%, rgba(0,0,0,.5)100%), url(lawyer2.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+height: 40rem;
+position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+header .logo span{
+    color: #ec9f68;
+}
+header .menubtn{
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+header .menubtn img{
+    filter: invert(1);
+}
+header .navbar a{
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+}
+header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100px;
+    height: 3px;
+    background: #ec9f68;
+    transition: .2s linear;
+}
+header .navbar a:hover::before{
+    width:100%;
+}
+.btn{
+    padding: 10px 15px;
+    background: #ec9f68;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.home .wrapper h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.home .wrapper h1{
+  color: white;
+  font-size: 2rem;
+}
+.home .wrapper p{
+    color: white;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.buttons{
+    margin-top: 1rem;
+}
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #000;
+}
+.status{
+    padding: 0 20px;
+    position: absolute;
+    left: 0;right: 0;
+    bottom: -50px;
+
+}
+.status .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1.5rem;
+}
+.status .box-container .box{
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5); 
+}
+.status .box-container ,box h2{
+    font-size: 3rem;
+    color: #202022;
+}
+.status .box-container .box p{
+    padding: 10px 0;
+    font-size: 1rem;
+}
+.about{
+    padding: 20px 50px;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.about .image{
+    font-size: 1 1 28rem;
+    text-align: center;
+    position: relative;
+}
+.about .image::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 10rem;
+    width: 10rem;
+    top: -15px;left: -15px;
+}
+.about .content{
+    flex: 1 1 28px;
+}
+.about .content span{
+    font-size: 15px;
+    color:#ec9f68;
+    padding: 20px;
+
+}
+.about .content h1{
+font-size: 2rem;
+color:#202022;
+}
+.about .content p{
+    padding: 1rem 0;
+}
+.about .content .award{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem,1fr));
+    gap: .5rem;
+    margin: 1rem 0;
+}
+.about .content .award .box{
+    padding: .8rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+}
+.service{
+    padding: 20px 50px;
+    margin-top: 2rem;
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 15px;
+    color: #ec9f68;
+}
+.heading h3{
+    font-size: 2rem;
+    color: #202022;
+    font-weight: 500;
+}
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    padding: .5rem;
+    background: #fff;
+}
+.service .box-container::before{
+    content: '';
+    position: obsolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 5rem;width: 5rem;
+    top: -10px;left: -10px;
+}
+
+.service .box-container::after{
+    content: '';
+    position: obsolute;
+    z-index: -1;
+    background: #ec9f68;
+    height: 5rem;width: 5rem;
+    bottom: -10px;right: -10px;
+}
+.service .box-container .box{
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #aaa;
+}
+.service .box-container .box h1{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #202022;
+}
+.service .box-container .box h1 span{
+    font-size: 2rem;
+    color: #ec9f68;
+}
+.service .box-container .box p{
+    font-size: 14px;
+    font-weight: 300;
+    padding: .5rem 0;
+}
+.service .box-container .box a{
+    display: flex;
+    align-items: center;
+    color: #202022;
+    margin-top: 0. 4rem;
+}
+.reviews{
+    padding: 20px;
+    margin-top: 1.5rem;
+
+}
+.reviews .clients-reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2r));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.reviews .clients-reviews .review{
+    padding: 1.5rem;
+    background:#aaa;
+    border-radius: 5px;
+}
+.review .info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+.review .info .row h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.review .info .row span{
+    font-size: 12px;
+    color: #ec9f68;
+}
+.contact{
+    background: linear-gradient(to top, rgba(0,0,0,.5)50%, rgba(0,0,0,.5)100%), url() no-repeat;
+background-position: center;
+background-size: cover;
+padding: 50px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+.Contact span{
+    color: #ec9f68;
+    font-size: 12px;
+    font-weight: 500;
+}
+.contact h3{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-top: 10px;
+}
+.contact form .box{
+    padding: 10px 5px;
+    font-size: 15px;
+    background: #fff;
+    outline: none;
+    border: none;
+    margin: 3px 0;
+}
+.contact form textarea{
+    height: 8rem;
+    resize: none;
+    outline: none;
+    margin-bottom: 12px;
+    padding: 10px 5px;
+    font-size: 15px;
+}
+.contactinfo{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.contactinfo .box{
+    padding: 1.5rem;
+    border: 1px solid #aaa;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactinfo .box span{
+    color: #ec9f68;
+    padding: 10px 0;
+}
+.footer a{
+    color: #202022;
+    font-size: 18px;
+}
+.copy{
+    background: #ec9f68;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+ 
+    
+
+
+
+
+
+
